@@ -8,7 +8,13 @@ module.exports = {
     fontFamily: {
       sans: ['Work Sans']
     },
-    extend: {},
+    extend: {
+      colors: {
+        'app-gray': '#181924',
+        'app-gray2': '#22232F',
+        'app-gray3': '#2A2C3C'
+      }
+    },
   },
   plugins: [],
 }
