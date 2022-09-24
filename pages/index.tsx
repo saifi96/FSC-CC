@@ -1,14 +1,21 @@
 import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
+import routes from '../routes'
 
-const Home: NextPage = () => {
+const IndexPage: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <h1 className="text-3xl font-sans">
-        Hello world!
-      </h1>
+    <div>
     </div>
   )
 }
 
-export default Home
+
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      permanent: false,
+      destination: routes.dashboard
+    }
+  }
+}
+
+export default IndexPage
