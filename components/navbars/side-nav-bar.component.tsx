@@ -7,7 +7,7 @@ interface IProps {
 
 }
 
-const SidebarComponent: FunctionComponent<IProps> = (props) => {
+const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
     return (
         <div className='bg-app-gray2 w-full'>
             <div className='flex flex-col justify-between h-full'>
@@ -98,4 +98,4 @@ const SidebarComponent: FunctionComponent<IProps> = (props) => {
     )
 }
 
-export default SidebarComponent
+export default SideNavBarComponent
