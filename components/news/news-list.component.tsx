@@ -28,9 +28,9 @@ const NewsListComponent: FunctionComponent<IProps> = (props) => {
                         news.map((_item, idx) => {
                             return (
                                 <Link key={idx} href={ROUTES.NEWS_ARTICLE + idx}>
-                                    <Stack key={idx} direction='row' alignItems={'center'} spacing={8} cursor={'pointer'}>
+                                    <Stack key={idx} direction='row' alignItems={'center'} spacing={8} cursor={'pointer'} height={'full'}>
                                         <div className="w-1/2 h-full">
-                                            <Image src="/images/3.jpeg" borderRadius={'xl'} alt='' fit={'contain'}></Image>
+                                            <Image src="/images/3.jpeg" borderRadius={'lg'} alt='' fit={'cover'}></Image>
                                         </div>
                                         <div>
                                             <div className="text-xs text-yellow-300 mb-2">07/22/2022</div>
