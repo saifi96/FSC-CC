@@ -14,11 +14,11 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
 
     const titleIconView = props.layoutView === 'title-icon';
     return (
-        <div className='bg-app-gray2 w-full'>
+        <div className='bg-app-gray2 w-full min-h-full'>
             <div className='flex flex-col justify-between h-full'>
                 <div className='mb-20'>
-                    <div className='px-10 py-10 flex items-center justify-center'>
-                        <div className='h-20 w-20 bg-white' style={{ backgroundImage: "url('')" }}>
+                    <div className={`${titleIconView ? 'px-10' : 'px-6'} py-10  flex items-center justify-center`}>
+                        <div className={`${titleIconView ? 'h-20 w-20' : 'h-14 w-14'} bg-white`} style={{ backgroundImage: "url('')" }}>
                         </div>
                     </div>
                     {
@@ -39,12 +39,12 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                     }
                 </div>
                 <div className='mb-20'>
-                    <div className='pl-10 text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3'>
+                    <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3`}>
                         <RiDashboardLine size={28} />
                         {titleIconView && <span className='ml-5'>Dashboard</span>}
                     </div>
                     <Link href={`${ROUTES.NFT_FEED}`} >
-                        <div className='pl-10 text-lg font-semibold flex flex-row py-4 cursor-pointer text-gray-500'>
+                        <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer text-gray-500`}>
                             <MdRssFeed size={28} />
                             {
                                 titleIconView &&
@@ -55,17 +55,7 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                             }
                         </div>
                     </Link>
-                    {/* <div className='pl-10 text-lg font-semibold flex flex-row py-4 cursor-pointer text-gray-500'>
-                        <MdRssFeed size={28} />
-                        {
-                            titleIconView &&
-                            <>
-                                <span className='mx-5'>NFT Feed</span>
-                                <RiVipCrown2Fill size={18} />
-                            </>
-                        }
-                    </div> */}
-                    <div className='pl-10 text-lg font-semibold flex flex-row py-4 text-gray-500'>
+                    <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer text-gray-500`}>
                         <MdOutlineCollectionsBookmark size={28} />
                         {
                             titleIconView &&
@@ -75,14 +65,14 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                             </>
                         }
                     </div>
-                    <div className='pl-10 text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3'>
+                    <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3`}>
                         <AiOutlineAppstore size={28} />
                         {
                             titleIconView &&
                             <span className='ml-5'>App Store</span>
                         }
                     </div>
-                    <div className='pl-10 text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3'>
+                    <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3`}>
                         <MdOutlineContactMail size={28} />
                         {
                             titleIconView &&

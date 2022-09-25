@@ -10,10 +10,10 @@ const DashboardPage: NextPage = () => {
   return (
     <AppLayout>
       <div className='flex flex-row h-full w-full'>
-        <div className=''>
+        <div className='max-w-xs'>
           <SideNavBarComponent layoutView={'title-icon'} isUser={false} />
         </div>
-        <div className=''>
+        <div className='w-full'>
           <TopNavBarComponent />
           <div className='px-16 py-10'>
             <div className='mb-10 bg-app-gray2 rounded-2xl h-64'>

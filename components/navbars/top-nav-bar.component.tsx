@@ -25,7 +25,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                     </div>
                 </div>
                 <div>
-                    <div className='inline-flex flex-wrap items-center'>
+                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 ${props.isUser ? 'py-1 rounded-2xl' : ''}`}>
                         <div className='text-gray-600 font-extrabold text-sm'>
                             Gas Fee
                         </div>
@@ -36,7 +36,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                             9 GWEI
                         </div>
                     </div>
-                    <div className='inline-flex flex-wrap items-center px-10'>
+                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 mx-3 ${props.isUser ? 'py-1 rounded-2xl' : ''}`}>
                         <div className='text-gray-600 font-extrabold text-sm'>
                             Prices
                         </div>
@@ -47,7 +47,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                             $1600
                         </div>
                     </div>
-                    <div className='inline-flex flex-wrap items-center'>
+                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 ${props.isUser ? 'py-1 rounded-2xl' : ''}`}>
                         <div className='text-gray-600 font-extrabold text-sm'>
                             Prices
                         </div>
@@ -60,10 +60,20 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                     </div>
                 </div>
                 <div>
-                    <button className='rounded-full font-semibold border border-white text-sm px-5 py-1 inline-flex items-center'>
-                        <FaGoogleWallet />&nbsp;
-                        Connect Wallet
-                    </button>
+                    {
+                        props.isUser
+                            ?
+                            <button className='rounded-full font-semibold border border-white text-sm px-5 py-1 inline-flex items-center'>
+                                <FaGoogleWallet />&nbsp;
+                                View Wallet
+                            </button>
+                            :
+                            <button className='rounded-full font-semibold border border-white text-sm px-5 py-1 inline-flex items-center'>
+                                <FaGoogleWallet />&nbsp;
+                                Connect Wallet
+                            </button>
+                    }
+
                 </div>
             </div>
         </div>
