@@ -1,5 +1,6 @@
 import { Stack } from "@chakra-ui/react";
 import { AppProps } from "next/app";
+import PriceChartComponent from "../../components/charts/price-chart.component";
 import SideNavBarComponent from "../../components/navbars/side-nav-bar.component";
 import TopNavBarComponent from "../../components/navbars/top-nav-bar.component";
 import NewsLetterComponent from "../../components/news-letter/news-letter.component";
@@ -24,6 +25,9 @@ function NFTFeedPage({ pageProps }: AppProps) {
             <div className="mb-10">
               <Stack spacing={10} direction={'row'}>
                 <div className="flex-1">
+                  <div className="mb-10">
+                    <PriceChartComponent title={'Floor Price'} />
+                  </div>
                   <NewsLetterComponent />
                 </div>
                 <div className="flex-1">
