@@ -59,7 +59,7 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                         <div className='uppercase text-xl font-bold'>
                             Learn Web3
                         </div>
-                        <div className='mt-1 text-gray-300 text-xs overflow-hidden line-clamp-2 box-orient-vertical text-ellipsis'>
+                        <div className='mt-1 text-gray-300 text-xs  text-ellipsis h-8'>
                             Resources to get you up to speed.
                         </div>
                         <div className='bg-yellow-300 absolute left-0 top-0 bottom-0 w-2 h-1/2 my-auto rounded-r-3xl'>
@@ -69,7 +69,7 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                         <div className='uppercase text-xl font-bold'>
                             Shake the box
                         </div>
-                        <div className='mt-1 text-gray-300 text-xs'>
+                        <div className='mt-1 text-gray-300 text-xs  text-ellipsis h-8'>
                             Claim your rewards, level up,<span className='inline-block'>and check leaderboard.</span>
                         </div>
                         <div className='bg-yellow-300 absolute left-0 top-0 bottom-0 w-2 h-1/2 my-auto rounded-r-3xl'>
@@ -79,7 +79,7 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                         <div className='uppercase text-xl font-bold'>
                             Join our cohort
                         </div>
-                        <div className='mt-1 text-gray-300 text-xs'>
+                        <div className='mt-1 text-gray-300 text-xs  text-ellipsis h-8'>
                             Be a featured partner.
                         </div>
                         <div className='bg-yellow-300 absolute left-0 top-0 bottom-0 w-2 h-1/2 my-auto rounded-r-3xl'>
