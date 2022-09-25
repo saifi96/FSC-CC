@@ -21,7 +21,7 @@ function NFTFeedPage({ pageProps }: AppProps) {
         </div>
         <div className="w-full">
           <TopNavBarComponent isUser={true} />
-          <div className='px-16 py-10'>
+          <div className='px-10 py-10'>
             <div className="mb-5">
               <Stack direction={'row'} spacing={10} flexWrap={'wrap'}>
                 <div className="flex-1">

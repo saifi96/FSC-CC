@@ -15,7 +15,7 @@ const DashboardPage: NextPage = () => {
         </div>
         <div className='w-full'>
           <TopNavBarComponent />
-          <div className='px-16 py-10'>
+          <div className='px-10 py-10'>
             <div className='mb-10 bg-app-gray2 rounded-2xl h-64'>
               <CarouselComponent />
             </div>

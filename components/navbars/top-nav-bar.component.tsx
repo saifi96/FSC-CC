@@ -10,7 +10,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
 
     return (
         <div className='bg-app-gray2 h-20'>
-            <div className='flex flex-row flex-wrap justify-between items-center h-full w-full px-16 py-5'>
+            <div className='flex flex-row flex-wrap justify-between items-center h-full w-full px-10 py-5'>
                 <div>
                     <div className='inline-flex flex-wrap items-center'>
                         <div className='text-xl  uppercase font-semibold'>
