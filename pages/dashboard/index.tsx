@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import TableCardComponent from '../../components/cards/table-card.component'
 import CarouselComponent from '../../components/carousel/carousel.component'
@@ -16,7 +17,7 @@ const DashboardPage: NextPage = () => {
         <div className='w-10/12'>
           <TopNavBarComponent />
           <div className='px-16 py-10'>
-            <div className='mb-10'>
+            <div className='mb-10 bg-app-gray2 rounded-2xl h-64'>
               <CarouselComponent />
             </div>
             <div className='mb-10'>
