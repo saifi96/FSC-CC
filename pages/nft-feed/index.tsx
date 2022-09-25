@@ -7,6 +7,7 @@ import SideNavBarComponent from "../../components/navbars/side-nav-bar.component
 import TopNavBarComponent from "../../components/navbars/top-nav-bar.component";
 import NewsLetterComponent from "../../components/news-letter/news-letter.component";
 import NewsListComponent from "../../components/news/news-list.component";
+import NFTProfileCardComponent from "../../components/nft-feed/nft-profile.component";
 import NFTFeedStatsComponent from "../../components/nft-feed/stats.component";
 import AppLayout from "../../layout/app.layout";
 
@@ -24,7 +25,7 @@ function NFTFeedPage({ pageProps }: AppProps) {
             <div className="mb-5">
               <Stack direction={'row'} spacing={10} flexWrap={'wrap'}>
                 <div className="flex-1">
-
+                  <NFTProfileCardComponent />
                 </div>
                 <div className="flex-1">
                   <Stack direction={'row'}>
@@ -52,7 +53,7 @@ function NFTFeedPage({ pageProps }: AppProps) {
               <NFTFeedStatsComponent />
             </div>
             <div className="mb-5">
-              <Stack spacing={10} direction={'row'}>
+              <Stack spacing={5} direction={'row'}>
                 <div className="flex-1">
                   <div className="mb-5">
                     <PriceChartComponent title={'Floor Price'} />

@@ -19,7 +19,7 @@ const DashboardPage: NextPage = () => {
             <div className='mb-10 bg-app-gray2 rounded-2xl h-64'>
               <CarouselComponent />
             </div>
-            <div className='mb-10'>
+            <div className='mb-5'>
               <TopStories />
             </div>
             <div className='flex flex-row flex-wrap'>
