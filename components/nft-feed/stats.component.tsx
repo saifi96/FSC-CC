@@ -2,10 +2,14 @@ import { Stack, StackDivider } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
 import { FaEthereum } from "react-icons/fa";
 
-const NFTFeedStatsComponent: FunctionComponent<any> = (props) => {
+interface IProps {
+
+}
+
+const NFTFeedStatsComponent: FunctionComponent<IProps> = (props) => {
     return (
         <div className="bg-app-gray3 px-10 py-5 rounded-2xl">
-            <Stack direction={'row'}   divider={<StackDivider borderColor='gray.600'  />} spacing={10}>
+            <Stack direction={'row'}   divider={<StackDivider borderColor='gray.600'  />} spacing={10} flexWrap={'wrap'}>
                 <div className="text-center">
                     <div className="uppercase text-xs">
                         Floor Price
