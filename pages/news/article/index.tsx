@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 
 
-function DashboardPage({ pageProps }: AppProps) {
+function ArticlePage({ pageProps }: AppProps) {
   return (
       <>
           
@@ -9,4 +9,4 @@ function DashboardPage({ pageProps }: AppProps) {
   );
 }
 
-export default DashboardPage;
+export default ArticlePage;

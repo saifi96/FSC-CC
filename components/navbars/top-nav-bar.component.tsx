@@ -3,10 +3,11 @@ import { FaGoogleWallet, FaArtstation } from 'react-icons/fa'
 import { RiMoneyDollarCircleFill } from 'react-icons/ri'
 
 interface IProps {
-
+    isUser?: boolean
 }
 
 const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
+
     return (
         <div className='bg-app-gray2 h-20'>
             <div className='flex flex-row flex-wrap justify-between items-center h-full w-full px-16 py-5'>

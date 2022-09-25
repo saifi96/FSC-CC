@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import routes from '../routes'
+import ROUTES from '../routes'
 
 const IndexPage: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       permanent: false,
-      destination: routes.dashboard
+      destination: ROUTES.DASHBOARD
     }
   }
 }
