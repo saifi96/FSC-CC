@@ -25,7 +25,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                     </div>
                 </div>
                 <div>
-                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 ${props.isUser ? 'py-1 rounded-2xl' : ''}`}>
+                    <div className={`inline-flex flex-wrap items-center px-3 ${props.isUser ? 'py-1 rounded-2xl bg-app-gray3' : ''}`}>
                         <div className='text-gray-600 font-extrabold text-sm'>
                             Gas Fee
                         </div>
@@ -36,7 +36,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                             9 GWEI
                         </div>
                     </div>
-                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 mx-3 ${props.isUser ? 'py-1 rounded-2xl' : ''}`}>
+                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 mx-3 ${props.isUser ? 'py-1 rounded-2xl bg-app-gray3' : ''}`}>
                         <div className='text-gray-600 font-extrabold text-sm'>
                             Prices
                         </div>
@@ -47,7 +47,7 @@ const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
                             $1600
                         </div>
                     </div>
-                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 ${props.isUser ? 'py-1 rounded-2xl' : ''}`}>
+                    <div className={`inline-flex flex-wrap items-center bg-app-gray3 px-3 ${props.isUser ? 'py-1 rounded-2xl bg-app-gray3' : ''}`}>
                         <div className='text-gray-600 font-extrabold text-sm'>
                             Prices
                         </div>

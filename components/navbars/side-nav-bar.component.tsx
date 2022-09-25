@@ -39,10 +39,12 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
                     }
                 </div>
                 <div className='mb-20'>
-                    <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3`}>
-                        <RiDashboardLine size={28} />
-                        {titleIconView && <span className='ml-5'>Dashboard</span>}
-                    </div>
+                    <Link href={`${ROUTES.DASHBOARD}`}>
+                        <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer hover:bg-app-gray3`}>
+                            <RiDashboardLine size={28} />
+                            {titleIconView && <span className='ml-5'>Dashboard</span>}
+                        </div>
+                    </Link>
                     <Link href={`${ROUTES.NFT_FEED}`} >
                         <div className={`${titleIconView ? 'pl-10' : 'justify-center'} text-lg font-semibold flex flex-row py-4 cursor-pointer text-gray-500`}>
                             <MdRssFeed size={28} />
