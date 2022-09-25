@@ -1,5 +1,7 @@
-import { Stack } from "@chakra-ui/react";
+import { Stack, StackDivider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
+import EtherScanCopyCardComponent from "../../components/cards/etherscan-copy-card.component";
+import OfficialLinksComponent from "../../components/cards/official-links-card.component";
 import PriceChartComponent from "../../components/charts/price-chart.component";
 import SideNavBarComponent from "../../components/navbars/side-nav-bar.component";
 import TopNavBarComponent from "../../components/navbars/top-nav-bar.component";
@@ -19,13 +21,40 @@ function NFTFeedPage({ pageProps }: AppProps) {
         <div className="w-full">
           <TopNavBarComponent isUser={true} />
           <div className='px-16 py-10'>
-            <div className="mb-10">
+            <div className="mb-5">
+              <Stack direction={'row'} spacing={10} flexWrap={'wrap'}>
+                <div className="flex-1">
+
+                </div>
+                <div className="flex-1">
+                  <Stack direction={'row'}>
+                    <div className="flex-1">
+                      <div className="mb-3">
+                        <EtherScanCopyCardComponent />
+                      </div>
+                      <OfficialLinksComponent />
+                    </div>
+                    <div className="flex-1 text-sm">
+                      <Stack direction={'column'} spacing={8} divider={<StackDivider borderColor='gray.600' />} flexWrap={'wrap'} borderRadius={'2xl'} px={5} py={5} backgroundColor={'app-gray3'}>
+                        <div>
+                          20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸
+                        </div>
+                        <div>
+                          20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸
+                        </div>
+                      </Stack>
+                    </div>
+                  </Stack>
+                </div>
+              </Stack>
+            </div>
+            <div className="mb-5">
               <NFTFeedStatsComponent />
             </div>
-            <div className="mb-10">
+            <div className="mb-5">
               <Stack spacing={10} direction={'row'}>
                 <div className="flex-1">
-                  <div className="mb-10">
+                  <div className="mb-5">
                     <PriceChartComponent title={'Floor Price'} />
                   </div>
                   <NewsLetterComponent />
@@ -35,12 +64,6 @@ function NFTFeedPage({ pageProps }: AppProps) {
                 </div>
               </Stack>
             </div>
-            {/* <div className='flex flex-row flex-wrap mb-10'>
-              <div className="flex-1">
-              </div>
-              <div className="flex-1">
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
