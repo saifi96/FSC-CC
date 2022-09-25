@@ -18,12 +18,12 @@ const DashboardPage: NextPage = () => {
             <div className='mb-10'>
               <CarouselComponent />
             </div>
-            <div>
-              <div className='w-6/12'>
+            <div className='flex flex-row flex-wrap'>
+              <div className='mr-10 flex-1'>
                 <TableCardComponent />
               </div>
-              <div className='w-6/12'>
-
+              <div className='flex-1'>
+                <TableCardComponent />
               </div>
             </div>
           </div>
