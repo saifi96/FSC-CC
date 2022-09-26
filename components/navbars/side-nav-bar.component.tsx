@@ -14,7 +14,7 @@ const SideNavBarComponent: FunctionComponent<IProps> = (props) => {
 
     const titleIconView = props.layoutView === 'title-icon';
     return (
-        <div className='bg-app-gray2 w-full min-h-full'>
+        <div className='bg-app-gray2 w-full min-h-full overflow-y-auto'>
             <div className='flex flex-col justify-between h-full'>
                 <div className='mb-20'>
                     <div className={`${titleIconView ? 'px-10' : 'px-6'} py-10  flex items-center justify-center`}>
