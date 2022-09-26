@@ -8,8 +8,8 @@ const DashboardPage: NextPage = () => {
   return (
     <GuestLayout>
       <div className='w-full h-full'>
-        <div className='mb-10 bg-app-gray2 rounded-2xl h-64'>
-          <CarouselComponent />
+        <div className='mb-10 bg-app-gray2 rounded-2xl overflow-hidden'>
+          <CarouselComponent className='h-64' />
         </div>
         <div className='mb-5'>
           <TopStories />

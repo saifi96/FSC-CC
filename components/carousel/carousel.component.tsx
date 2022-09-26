@@ -1,9 +1,10 @@
-// import { Image } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
-// import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import { Image } from "@chakra-ui/react";
 
 interface IProps {
-
+    className?: string
 }
 
 const slides = [
@@ -32,13 +33,15 @@ const slides = [
 
 const CarouselComponent: FunctionComponent<IProps> = (props) => {
     return (
-        <div className="h-full rounded-2xl" style={{ backgroundImage: `url('${slides[3].image}')`, backgroundRepeat: 'no-repeate', backgroundSize: 'cover' }}>
-        </div>
-        // <Carousel infiniteLoop axis={'horizontal'} autoFocus={true} showStatus={false} showThumbs={false} centerMode={true}>
-        //     {slides.map((slide, idx) => {
-        //         return <Image key={idx} src={slide.image} height="auto" width="100%" alt="" />;
-        //     })}
-        // </Carousel>
+        <Carousel infiniteLoop axis={'horizontal'} showStatus={true} showThumbs={false} dynamicHeight={true} showIndicators={true} autoPlay={true}>
+            {slides.map((slide, idx) => {
+                return (
+                    <div key={idx}>
+                        <Image className={`${props.className || ''}`} src={slide.image} fit={'cover'} alt="" />
+                    </div>
+                )
+            })}
+        </Carousel>
     )
 }
 
