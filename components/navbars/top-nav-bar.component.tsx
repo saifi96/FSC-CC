@@ -9,7 +9,7 @@ interface IProps {
 const TopNavBarComponent: FunctionComponent<IProps> = (props) => {
 
     return (
-        <div className='bg-app-gray2 h-20'>
+        <div className='bg-app-gray2 h-20 sticky top-0 z-10'>
             <div className='flex flex-row flex-wrap justify-between items-center h-full w-full px-10 py-5'>
                 <div>
                     <div className='inline-flex flex-wrap items-center'>

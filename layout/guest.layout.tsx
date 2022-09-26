@@ -10,12 +10,12 @@ const GuestLayout: FunctionComponent<IProps> = (props) => {
     return (
         <AppLayout>
             <div className='flex flex-row h-full w-full'>
-                <div className='max-w-xs'>
+                <div className='max-w-xs h-full overflow-y-auto' style={{ maxWidth: '320px' }}>
                     <SideNavBarComponent layoutView={'title-icon'} isUser={false} />
                 </div>
-                <div className='w-full'>
+                <div className='w-full h-full overflow-y-auto'>
                     <TopNavBarComponent />
-                    <div className='px-10 py-10'>
+                    <div className='px-10 py-6'>
                         {props.children}
                     </div>
                 </div>

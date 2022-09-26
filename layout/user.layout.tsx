@@ -10,12 +10,12 @@ const UserLayout: FunctionComponent<IProps> = (props) => {
     return (
         <AppLayout>
             <div className="flex flex-row h-full w-full">
-                <div className="h-full max-w-xs">
+                <div className="h-full max-w-xs overflow-y-auto">
                     <SideNavBarComponent layoutView={'icon'} isUser={true} />
                 </div>
-                <div className="w-full h-full">
+                <div className="w-full h-full overflow-y-auto">
                     <TopNavBarComponent isUser={true} />
-                    <div className='px-10 py-10 overflow-y-auto'>
+                    <div className='px-10 py-6 h-full'>
                         {props.children}
                     </div>
                 </div>
